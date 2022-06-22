@@ -1,0 +1,170 @@
+[
+  {
+    "line": 6,
+    "elements": [
+      {
+        "line": 10,
+        "name": "# only for before center steps \"Given\" \"When\"...,  not for after like \"And\"",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1103279000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user navigates to \"http://google.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://google.com/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "BaseSteps.userNavigatesTo(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2218183100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 15047100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HeroAppSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 868200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WikipediaSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 703800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GoogleSteps.setup()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Validate Google Search result",
+        "description": "",
+        "id": "google-search-functionality;validate-google-search-result",
+        "after": [
+          {
+            "result": {
+              "duration": 3724800500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2472277800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user searches for \"Apple\" on Google",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Apple\"",
+                  "offset": 18
+                }
+              ],
+              "location": "GoogleSteps.user_searches_for_on_google(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 29444700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user should see results are more than 5000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5000",
+                  "offset": 38
+                }
+              ],
+              "location": "GoogleSteps.userShouldSeeResultsAreMoreThan(long)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          },
+          {
+            "name": "#"
+          },
+          {
+            "name": "@Google"
+          },
+          {
+            "name": "@Functional"
+          },
+          {
+            "name": "//"
+          },
+          {
+            "name": "can"
+          },
+          {
+            "name": "run"
+          },
+          {
+            "name": "whit"
+          },
+          {
+            "name": "any"
+          },
+          {
+            "name": "annotation"
+          },
+          {
+            "name": "names"
+          }
+        ]
+      }
+    ],
+    "name": "Google Search Functionality",
+    "description": "",
+    "id": "google-search-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/google.feature",
+    "tags": []
+  }
+]

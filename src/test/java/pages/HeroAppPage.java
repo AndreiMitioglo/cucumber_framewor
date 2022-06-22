@@ -1,7 +1,5 @@
 package pages;
 
-import org.junit.Assert;
-import org.openqa.selenium.NotFoundException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -25,6 +23,36 @@ public class HeroAppPage {
 
     @FindBy(css = "#elements>button")
     public WebElement deleteElementButton;
+
+    @FindBy(css = ".example>h3")
+    public WebElement contextMenuHeading3;
+
+    @FindBy(css = ".example>p:nth-child(2)")
+    public WebElement contextMenuParagraph1;
+
+    @FindBy(css = ".example>p:nth-child(3)")
+    public WebElement contextMenuParagraph2;
+
+    @FindBy(id = "hot-spot")
+    public WebElement rectangleBox;
+
+    @FindBy(css = ".radius")
+    public WebElement loginButton;
+
+    @FindBy(css = ".example>h2")
+    public WebElement getLoginPageH2;
+
+    @FindBy(css = ".example>h4")
+    public WebElement subHeaderParagraph;
+
+    @FindBy(css = "input[id='username']")
+    public WebElement usernameInputBox;
+
+    @FindBy(css = "input[id='password']")
+    public WebElement passwordInputBox;
+
+    @FindBy(id = "flash-messages")
+    public WebElement loginErrorMessageBox;
 
     public void clickOnCategoryLink(String linkText){
         for(WebElement link : categoryLinks){

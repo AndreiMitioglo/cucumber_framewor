@@ -30,16 +30,7 @@ public class GoogleSteps {
         googleSearchPage.searchInputBox.sendKeys(key + Keys.ENTER);
     }
 
-    @Then("user should see {string} in the url")
-    public void user_should_see_in_the_url(String key) {
-        Assert.assertTrue(driver.getCurrentUrl().contains(key));
-    }
 
-    @Then("user should see {string} in the title")
-    public void user_should_see_in_the_title(String key) {
-        Assert.assertTrue(driver.getTitle().contains(key));
-    }
-    //We will be writing our actual script steps here
 
     @Then("user should see results are more than {long}")
     public void userShouldSeeResultsAreMoreThan(long results) {
