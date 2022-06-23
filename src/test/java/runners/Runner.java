@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",  // copy path of features folder
         glue = "steps",
-        tags = "@Google", // empty - "" - will run all test cases in the feature google.file
+        tags = "@temp", // empty - "" - will run all test cases in the feature google.file
         dryRun = false,
        monochrome = false, // makes run terminal one color(no colors)
         plugin = {"html:target/cucumber-reports",

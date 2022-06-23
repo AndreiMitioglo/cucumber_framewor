@@ -6,10 +6,13 @@ utils\Driver.class
 utils\ConfigReader.class
 steps\BaseSteps.class
 utils\ActionsUtil.class
+steps\EtsySteps.class
 utils\AlertHandler.class
+steps\RandomSteps.class
 steps\HeroAppSteps.class
 steps\WikipediaSteps.class
 steps\GoogleSteps.class
 steps\Hooks.class
 utils\Waiter.class
+pages\EtsyHomePage.class
 pages\WikipediaPage.class
